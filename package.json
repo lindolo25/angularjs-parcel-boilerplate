@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-parcel-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel app/app.js",
+    "build": "parcel build app/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-ui-router": "^1.0.22",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
