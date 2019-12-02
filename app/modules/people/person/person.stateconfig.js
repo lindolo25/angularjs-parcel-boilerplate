@@ -5,11 +5,13 @@ module.exports = ['$stateProvider', function ($stateProvider) {
             url: '/person/:personId',
             parent: 'people',
             component: 'app.personComponent',
+            params: {
+                personId: {
+                    type: 'int'
+                }
+            },
             resolve: {
-                person: ["app.peopleService", "$stateParams", (peopleService, params) => {
-                    debugger;
-                    return peopleService.findById(params.id);
-                }]
+                person: ["app.peopleService", "$stateParams", (peopleService, params) => peopleService.findById(params.personId)]
             }
         });
 }];
